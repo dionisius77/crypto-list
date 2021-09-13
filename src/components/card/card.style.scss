@@ -1,0 +1,68 @@
+.crypto-card {
+  padding: 20px 0;
+  border-bottom: hsl(0, 0%, 80%) 1px solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .card-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    // border-radius: 50%;
+    // background-color: hsl(0, 0%, 80%);
+  }
+
+  .card-text {
+    flex: 1;
+    margin-left: 5px;
+    .name {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .code {
+      margin: 0;
+      font-size: 14px;
+    }
+  }
+
+  .card-value {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    align-items: flex-end;
+
+    .price {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .percentage {
+      font-size: 14px;
+      &.up {
+        color: hsl(120, 100%, 40%);
+      }
+      &.down {
+        color: hsl(0, 100%, 70%);
+      }
+    }
+
+    .delete-btn {
+      padding: 2px 4px;
+      font-size: 12px;
+      text-align: center;
+      border-radius: 5px;
+      background-color: hsl(0, 100%, 70%);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        background-color: hsl(0, 100%, 60%);
+      }
+    }
+  }
+}

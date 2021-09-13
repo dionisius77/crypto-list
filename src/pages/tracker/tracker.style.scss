@@ -1,0 +1,61 @@
+.tracker-page {
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.tracker-container {
+  background-color: #fff;
+  width: 375px;
+  height: 100vh;
+  border-radius: 10px;
+  position: relative;
+
+  .scroll-container {
+    &::-webkit-scrollbar {
+      width: 0 !important;
+    }
+    max-height: 100%;
+    margin-top: 10px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-y: scroll;
+  }
+
+  .refresh-btn {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: hsl(39, 100%, 70%);
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: hsl(39, 100%, 60%);
+    }
+  }
+
+  .loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+}
